@@ -1,11 +1,12 @@
-﻿Use AllWebUIServerClasses.pkg
-Use cConnection.pkg
+﻿    Use AllWebUIServerClasses.pkg
 
-Object oApplication is a cApplication
-    Object oConnection is a cConnection
-        Use LoginEncryption.pkg
+    Use cConnection.pkg
+
+    Object oApplication is a cApplication
+        Object oConnection is a cConnection
+            Use LoginEncryption.pkg
+        End_Object
     End_Object
-End_Object
 
 Object oWebApp is a cWebApp
     Set psTheme to "Df_Material"
